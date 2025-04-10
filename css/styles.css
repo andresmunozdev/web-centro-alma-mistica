@@ -1,0 +1,237 @@
+
+/* Estilos generales */
+body {
+    font-family: 'Nunito', sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+
+h1, h2, h3, h4 {
+    font-weight: 700;
+    color: #5e35b1;
+}
+
+h5 {
+    font-weight: bold;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.8);
+    display: inline-block;
+    padding: 5px 15px;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* sombra sutil */
+}
+
+.bg-purple {
+    background-color: #5e35b1;
+}
+
+/* Estilos del navbar */
+.navbar {
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    max-height: 70px;
+}
+
+/* Sección hero */
+.hero-section {
+    background-color: #5e35b1;
+    color: white;
+    padding: 80px 0;
+    margin-bottom: 30px;
+}
+
+.hero-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: white;
+
+}
+
+/* Sección Sobre Nosotros */
+.nosotros-us img {
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.cursos-detalles img {
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Tarjetas de servicios */
+.servicios-card {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    height: 100%;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.servicios-card h3 {
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+}
+
+/* Sección newsletter */
+.newsletter {
+    background-color: #343a40;
+    color: white;
+}
+
+.btn-primary {
+    background-color: #5e35b1;
+    border-color: #5e35b1;
+}
+
+.btn-primary:hover {
+    background-color: #4527a0;
+    border-color: #4527a0;
+}
+
+.form-text {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* Footer */
+footer a {
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.foot-blanco h3{
+    color: white;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.foot-blanco p{
+    color: white;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+
+/* Estilos responsivos básicos */
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 60px 0;
+    }
+    
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+}
+
+
+/* Estilos para grid testimonios */
+.gallery-container {
+    max-width: 1200px; /* Ancho máximo del contenedor */
+    margin: 2rem auto; /* Centrar y añadir margen vertical */
+    padding: 0 1rem; /* Padding horizontal para pantallas pequeñas */
+}
+
+/* --- El Grid --- */
+.image-grid {
+    display: grid; /* Habilita CSS Grid */
+    grid-template-columns: 1fr; /* Ocupa todo el ancho disponible */
+    gap: 1.5rem; /* Espacio vertical y horizontal entre items */
+}
+
+/* --- Estilos de cada item (tarjeta simulada) --- */
+.grid-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px; /* Bordes redondeados */
+    overflow: hidden; /* Asegura que la imagen no se salga */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    display: flex; /* Para controlar mejor el contenido interno */
+    flex-direction: column; /* Apila imagen y texto verticalmente */
+}
+
+
+.image-grid {
+    display: grid; /* Habilita CSS Grid en Testimonios*/
+    grid-template-columns: 1fr; /* Ocupa todo el ancho disponible */ 
+    gap: 1.5rem; /* Espacio vertical y horizontal entre items */
+   
+    @media (min-width: 600px) {
+        grid-template-columns: repeat(2, 1fr); /* 2 columnas iguales */
+    }
+
+    @media (min-width: 992px) {
+        grid-template-columns: repeat(4, 1fr); /* 4 columnas iguales */
+    }
+
+}
+
+
+/* CSS INICIO CUADRITOS BLOG */
+
+/* Estilos para grid Blog */
+.gallery-container-blog {
+    max-width: 1200px; /* Ancho máximo del contenedor */
+    margin: 2rem auto; /* Centrar y añadir margen vertical */
+    padding: 0 1rem; /* Padding horizontal para pantallas pequeñas */
+    font-family: sans-serif; /* Añadido para mejor legibilidad */
+}
+
+/* --- El Grid --- */
+.image-grid-blog {
+    display: grid; /* Habilita CSS Grid */
+    grid-template-columns: 1fr; /* Ocupa todo el ancho disponible */ 
+    gap: 1.5rem; /* Espacio vertical y horizontal entre items */
+   
+    @media (min-width: 600px) {
+        grid-template-columns: repeat(2, 1fr); /* 2 columnas iguales */
+    }
+
+    @media (min-width: 992px) {
+        grid-template-columns: repeat(4, 1fr); /* 4 columnas iguales */
+    }
+
+}
+
+/* --- Estilos de cada item (tarjeta simulada del blog) --- */
+.grid-item-blog {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden; /* Mantiene la imagen dentro de los bordes redondeados */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-decoration: none; /* Para quitar subrayado del link si afecta al texto */
+    color: inherit; 
+    display: block; 
+    padding: 0.5rem; /* Espacio interno */
+}
+
+/* ---Selector de imagen --- */
+.grid-item-blog .item-image { 
+    display: block;
+    width: 100%;
+    height: 180px; 
+    object-fit: cover;
+}
+
+.item-content-blog {
+    padding: 1rem; 
+}
+
+.item-content-blog .item-text {
+    margin: 0; 
+    font-size: 0.95rem;
+    line-height: 1.4;
+}
+
+.item-content-blog .item-text strong {
+    color: #333; 
+}
+
+
+/* CSS FIN CUADRITOS BLOG */

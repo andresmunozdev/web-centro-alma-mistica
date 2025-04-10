@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centro Alma Mística</title>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-purple">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="../image/Logo-Centro-Alma-Mistica.png" alt="Logo Centro Alma Mistica" class="logo">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./nosotros.html">Sobre Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./servicios.html">Servicios/Terapias</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./cursos.html">Cursos y Talleres</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./testimonios.html">Testimonios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="hero-section text-center">
+            <div class="container">
+                <h1>Centro Alma Mística</h1>
+                <p class="lead">Un espacio dedicado a la sanación, el equilibrio y el bienestar integral</p>
+            </div>
+        </section>
+
+        <!-- Sección Nosotros -->
+        <section id="nosotros" class="nosotros-us py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <img src="../image/contacto.png" alt="Imagen terapias" class="img-fluid rounded shadow-lg mb-4">
+                    </div>
+                    <div class="col-md-8">
+                        <h2 class="mb-4">Área de Contacto</h2>
+                        <p>Si tienes alguna pregunta o deseas más información sobre nuestros servicios, no dudes en contactarnos. </p>
+                        <p>Puede ser a nuestro WhatsApp o vía Formulario</p> 
+                        <p>Estamos aquí para ayudarte en tu camino hacia el bienestar integral.</p>
+                        <p>WhatsApp 💬: +56 9 9999 9999</p>
+                        <p>Correo: 📧 hola@centroalmamistica.cl</p>
+                        <p>Horario: 🕙 Lunes a Viernes 10:00 a 18:00 hrs</p>
+                        <p>Dirección: 📍 Calle Redonda 123, Santiago, Chile</p>
+                            
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Inicio Sección Formulario Contacto-->
+        <section id="contact" class="contact py-5">     
+            <div class="container">
+                <h2 class="text-center mb-4">Contáctanos</h2>
+                <form>
+                    <div class="row g-3">
+                        <div class="col-md-6">
+                            <label for="name" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="name" required>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="col-md-12">
+                            <label for="message" class="form-label">Mensaje</label>
+                            <textarea class="form-control" id="message" rows="4" required></textarea>
+                        </div>
+                        <div class="col-md-12 text-center">
+                            <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+                        </div>
+                    </div>
+                </form> 
+            </div>
+        </section>
+
+        <!-- Fin Sección Formulario Contacto-->
+
+
+
+        <!-- Seccios servicios -->
+        <section id="servicios" class="servicios py-5 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-5">Accesos Directos</h2>
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <div class="servicios-card">
+                            <h3>Servicios de Terapias</h3>
+                            <p>Ofrecemos diversas terapias holísticas que incluyen reiki, terapia energética, sanación pránica y más, diseñadas para restaurar el equilibrio y promover la sanación.</p>
+                            <a href="./servicios.html" class="btn btn-primary">Conocer más</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="servicios-card">
+                            <h3>Cursos y Talleres</h3>
+                            <p>Aprende técnicas de meditación, desarrollo personal y sanación energética con nuestros expertos a través de cursos y talleres prácticos y transformadores.</p>
+                            <a href="./cursos.html" class="btn btn-primary">Ver más</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="servicios-card">
+                            <h3>Visita Nuestro Blog</h3>
+                            <p>Ofrecemos contenido diverso relacionado a las terapias, energías, yoga, etc.</p>
+                            <a href="./blog.html" class="btn btn-primary">Visita el Blog</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Sección Newsletter -->
+        <section class="newsletter py-3">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 text-center">
+                        <h2 class="mb-3">Suscríbete a nuestro Newsletter</h2>
+                        <p class="mb-4">Recibe información sobre nuestros próximos talleres, consejos de bienestar y más.</p>
+                        <form>
+                            <div class="row g-2">
+                                <div class="col-sm-8">
+                                    <input type="email" class="form-control" placeholder="Ingresa tu email" required>
+                                </div>
+                                <div class="col-sm-4">
+                                    <button type="submit" class="btn btn-primary">Suscribirse</button>
+                                </div>
+                            </div>
+                            <div class="form-text mt-2">No compartiremos tu correo con nadie más.</div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-purple text-white py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mb-3 text-white foot-blanco">
+                    <h3>Centro Alma Mística</h3>
+                    <h3>Un espacio para tu bienestar integral</h3>
+                </div>
+                <div class="col-md-6 mb-3 foot-blanco">
+                    <h3>Contáctanos</h3>
+                    <p>
+                        <a href="mailto:hola@centroalmamistica.cl" class="text-white">hola@centroalmamistica.cl</a><br>
+                        <a href="tel:+56999999999" class="text-white">+56 9 9999 9999</a>
+                    </p>
+                </div>
+            </div>
+            <div class="text-center mt-3">
+                <p>&copy; 2025 Derechos Reservados | Centro Alma Mística</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
