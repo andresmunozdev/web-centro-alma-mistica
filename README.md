@@ -1,2 +1,2 @@
-Diseño Pagina Web para Escuela Alma Mistica 🧑🏽‍💻
+Diseño Pagina Web para Centro Alma Mistica 🧑🏽‍💻
 Proyecto desarrollado por estudios en CoderHouse 🤓
