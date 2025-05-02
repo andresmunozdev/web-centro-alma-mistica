@@ -1,0 +1,53 @@
+/* Estructura del sitio: navbar, hero, footer, grid */
+
+@use 'variables' as *;
+@use 'mixins' as *;
+
+.navbar {
+  padding: 10px 0;
+  @include box-shadow(0, 2px, 5px, rgba(0,0,0,0.1));
+}
+
+.logo {
+  max-height: 70px;
+}
+
+.hero-section {
+  background-color: $color-primary;
+  color: $color-white;
+  padding: 40px 0;
+  margin-bottom: 30px;
+
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: $color-white;
+  }
+}
+
+.nosotros-us img,
+.cursos-detalles img {
+  @include box-shadow(0, 3px, 10px, rgba(0,0,0,0.1));
+}
+
+footer a {
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.foot-blanco {
+  h3, p {
+    color: $color-white;
+    font-size: 1rem;
+    font-weight: 400;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 60px 0;
+    h1 { font-size: 2rem; }
+  }
+}

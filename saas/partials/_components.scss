@@ -1,0 +1,119 @@
+/* Tarjetas, botones, newsletter, grid, utilities    */
+
+@use 'variables' as *;
+@use 'mixins' as *;
+
+// Placeholder para sombras de tarjetas
+%card-shadow {
+  @include box-shadow(0, 3px, 10px, rgba(0, 0, 0, 0.1));
+}
+
+.servicios-card {
+  @extend %card-shadow;
+  background-color: $color-white;
+  border-radius: 8px;
+  padding: 20px;
+  height: 100%;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+    @include box-shadow(0, 6px, 20px, rgba(0, 0, 0, 0.15));
+  }
+
+  h3 {
+    margin-bottom: 15px;
+    font-size: 1.3rem;
+  }
+}
+
+.newsletter {
+  background-color: $color-dark-bg;
+  color: $color-white;
+}
+
+.btn-primary {
+  background-color: $color-primary;
+  border-color: $color-primary;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+
+  &:hover {
+    background-color: $color-primary-dark;
+    border-color: $color-primary-dark;
+    transform: translateY(-3px);
+  }
+}
+
+.form-text {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.gallery-container,
+.gallery-container-blog {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.image-grid,
+.image-grid-blog {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+
+  @media (min-width: 600px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: 992px) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.grid-item,
+.grid-item-blog {
+  @extend %card-shadow;
+  background-color: $color-white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+    @include box-shadow(0, 6px, 20px, rgba(0, 0, 0, 0.15));
+  }
+}
+
+.grid-item-blog {
+  text-decoration: none;
+  color: inherit;
+  padding: 0.5rem;
+
+  .item-image {
+    display: block;
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+
+  .item-content-blog {
+    padding: 1rem;
+
+    .item-text {
+      margin: 0;
+      font-size: 0.95rem;
+      line-height: 1.4;
+
+      strong {
+        color: $color-text;
+      }
+    }
+  }
+}
