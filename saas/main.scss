@@ -1,7 +1,8 @@
-/* Importa todos los partials a compilar  */
 
-@use 'partials/variables';
-@use 'partials/mixins';
-@use 'partials/base';
-@use 'partials/layout';
-@use 'partials/components';
+@import 'partials/variables';
+@import 'partials/mixins';
+@import 'partials/base';
+@import 'partials/layout';
+@import 'partials/components';
+@import 'partials/index';     
+@import 'partials/testimonios';

@@ -1,6 +1,7 @@
 @charset "UTF-8";
-/* Importa todos los partials a compilar  */
 /* Variables globales del proyecto */
+/* Estilos globales, tipografía y resets */
+/*@use 'variables' as *;*/
 body {
   font-family: "Nunito", sans-serif;
   color: #333;
@@ -27,8 +28,8 @@ h5 {
   background-color: #5e35b1;
 }
 
-/* Importa todos los partials a compilar  */
 /* Estructura del sitio: navbar, hero, footer, grid */
+/*@use 'variables' as *;*/
 .navbar {
   padding: 10px 0;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -76,8 +77,8 @@ footer a:hover {
     font-size: 2rem;
   }
 }
-
 /* Tarjetas, botones, newsletter, grid, utilities    */
+/*@use 'variables' as *;*/
 .grid-item,
 .grid-item-blog, .servicios-card {
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
@@ -187,3 +188,495 @@ footer a:hover {
   color: #333;
 }
 
+/* --- Nuevo Maquetado a INDEX ---- */
+/* MAIN 1: Hero + Nosotros */
+.alm-main-hero-nosotros {
+  display: flex;
+  flex-direction: column;
+}
+
+.alm-hero {
+  /* Fondo morado sólido */
+  background-color: #5e35b1;
+  padding: 2.5rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff; /* texto blanco */
+  font-size: 1rem;
+}
+
+.alm-hero__content h1 {
+  color: #fff; /* texto blanco */
+  margin-bottom: 0.5rem;
+}
+
+.alm-hero__content h1 {
+  font-size: 2.5rem;
+}
+
+.alm-hero__subtitle {
+  font-size: 1.25rem;
+  margin-top: 1rem;
+}
+
+.alm-nosotros {
+  padding: 2rem 2rem;
+}
+
+.alm-nosotros__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+}
+
+.alm-nosotros__image img {
+  width: 60%;
+  height: auto;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+  object-fit: cover;
+}
+
+.alm-nosotros__texto {
+  flex: 1;
+  min-width: 300px;
+}
+
+.alm-nosotros__texto h2 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+/* Servicios + Newsletter */
+.alm-main-servicios-newsletter {
+  display: flex;
+  flex-direction: column;
+}
+
+.alm-servicios {
+  background-color: #f9f9f9;
+  padding: 4rem 2rem;
+}
+
+.alm-servicios h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.alm-servicios__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.alm-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  gap: 2rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.alm-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.alm-card h3 {
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+}
+
+.alm-btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.6rem 1.2rem;
+  background-color: #5e35b1;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Newsletter */
+.alm-newsletter {
+  padding: 2rem 2rem;
+  text-align: center;
+  background-color: #343a40;
+}
+
+.alm-newsletter__form {
+  display: inline-grid;
+  grid-template-columns: 1fr auto;
+  gap: 0.5rem;
+  max-width: 800px;
+  width: 100%;
+  display: inline-grid;
+  align-items: center;
+}
+
+.alm-newsletter-sub {
+  grid-column: 1/-1;
+  margin-top: 0.5rem;
+  color: #ffffff;
+}
+
+.alm-newsletter__form input {
+  padding: 0.8rem;
+  height: 2.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.alm-newsletter__form button {
+  padding: 0.4rem 1.2rem;
+  border: none;
+  background-color: #5e35b1;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.alm-newsletter__note {
+  grid-column: 1/-1;
+  margin-top: 0.5rem;
+  color: #ffffff;
+}
+
+@media (max-width: 576px) {
+  .alm-newsletter__form {
+    grid-template-columns: 1fr;
+    justify-content: center;
+    text-align: center;
+  }
+  .alm-newsletter__form input,
+  .alm-newsletter__form button {
+    width: 100%;
+  }
+}
+/* --- Fin Nuevo Maquetado a INDEX ---- */
+/* --- Nuevo Maquetado a Testimonios  ---- */
+/* —— MAIN PRINCIPAL —— */
+.alm2-main-principal {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Hero */
+.alm2-hero {
+  background-color: #5e35b1;
+  color: #fff;
+  padding: 2.5rem 2rem;
+  text-align: center;
+}
+
+.alm2-hero__content h1 {
+  color: #fff;
+  font-size: 2.5rem;
+}
+
+.alm2-hero__subtitle {
+  font-size: 1.25rem;
+  margin-top: 1rem;
+}
+
+/* Nosotros */
+.alm2-nosotros {
+  padding: 2rem 2rem;
+}
+
+.alm2-nosotros__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1.5rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.alm2-nosotros__imagen {
+  flex: 1 1 300px;
+  display: flex;
+  justify-content: center;
+}
+
+.alm2-nosotros__imagen img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  aspect-ratio: 1/1;
+  border-radius: 8px;
+  object-fit: cover;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.alm2-nosotros__texto {
+  flex: 1 1 450px;
+  max-width: 550px;
+  padding-right: 1rem;
+}
+
+.alm2-nosotros__texto h2 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+}
+
+@media (max-width: 768px) {
+  .alm2-nosotros__wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+@media (max-width: 1366px) {
+  .alm2-nosotros__wrapper {
+    gap: 1.5rem;
+  }
+  .alm2-nosotros__texto {
+    max-width: 500px;
+  }
+}
+/* Testimonios */
+.alm2-testimonios {
+  padding: 2rem 2rem;
+  background: #f4f4f4;
+  text-align: center;
+}
+
+.alm2-testimonios__titulo {
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+/* — Servicios y Testimonios con Flexbox — */
+.alm2-testimonios__grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.alm2-testimonio {
+  flex: 0 1 24%;
+  max-width: 300px;
+  box-sizing: border-box;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.alm2-testimonio:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.alm2-testimonio img {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 300px;
+  margin: 0 auto 1rem;
+  border-radius: 0%;
+  object-fit: cover;
+}
+
+@media (min-width: 600px) {
+  .alm2-testimonio {
+    flex: 1 1 calc((100% - 1.5rem) / 2);
+  }
+}
+@media (min-width: 1024px) {
+  .alm2-testimonio {
+    flex: 1 1 calc((100% - 4.5rem) / 4);
+  }
+}
+.alm2-main-secundario {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 768px) {
+  .alm2-testimonio {
+    flex: 1 1 100%;
+    max-width: 90%;
+    margin: 0 auto;
+  }
+  .alm2-testimonio img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+/* Servicios */
+.alm2-servicios {
+  padding: 4rem 2rem;
+  background: #fff;
+}
+
+.alm2-servicios__titulo {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.alm2-servicios__grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-between;
+}
+
+.alm2-servicio-card {
+  background: #fafafa;
+  padding: 1.5rem;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  flex: 1 1 260px;
+}
+
+.alm2-servicio-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Newsletter */
+.alm2-newsletter {
+  padding: 3rem 2rem;
+  background: #343a40;
+  color: #fff;
+  text-align: center;
+}
+
+.alm2-newsletter__form {
+  display: inline-grid;
+  grid-template-columns: 1fr auto;
+  gap: 0.5rem;
+  align-items: center;
+  margin-top: 1rem;
+}
+
+.alm2-newsletter__form input,
+.alm2-newsletter__form button {
+  height: 2.5rem;
+  border: none;
+  border-radius: 4px;
+}
+
+.alm2-newsletter__form input {
+  padding: 0 0.8rem;
+  font-size: 1rem;
+}
+
+.alm2-newsletter__form button {
+  background: #5e35b1;
+  color: #fff;
+  cursor: pointer;
+  padding: 0 1.2rem;
+}
+
+.alm2-newsletter__nota {
+  display: block;
+  margin-top: 0.75rem;
+  font-size: 0.875rem;
+  color: #ccc;
+}
+
+/* --- Fin Nuevo Maquetado a Testimonios  ---- */
+/* --- Inicio Nuevo Maquetado a Terapias y Servicios  ---- */
+/* esto es para la version desktop */
+.terapias {
+  display: flex;
+  max-width: 1200px;
+  margin: 0.5rem auto;
+  flex-direction: column;
+  padding: 2rem 1.5rem;
+  background: linear-gradient(135deg, #f3e8ff, #c892ee);
+  border-radius: 1.5rem;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.terapias--contenido {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.terapia {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 1.5rem 0;
+}
+
+.terapia-img img {
+  width: 60%;
+  height: auto;
+  border-radius: 3rem;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  margin-left: 0.5rem;
+}
+
+.terapia-texto h3 {
+  font-size: 1.8rem;
+  color: #5e35b1;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.terapia-texto p {
+  font-size: 1rem;
+  color: #444;
+  line-height: 1.6;
+  margin: auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* inio de  version movil */
+@media (max-width: 768px) {
+  .terapias {
+    padding: 2rem 1rem; /* vertical y horizontal */
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  .terapia {
+    flex-direction: column;
+    text-align: center;
+    padding: 1.5rem 0;
+  }
+  .terapia-img img {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+  }
+  .terapia-texto {
+    padding: 0 0.5rem;
+  }
+}
+/* fin de version movil */
+/* Alternancia visual */
+.fila.par .terapia-img {
+  order: 1;
+}
+
+.fila.par .terapia-texto {
+  order: 2;
+}
+
+.fila.impar .terapia-texto {
+  order: 1;
+}
+
+.fila.impar .terapia-img {
+  order: 2;
+}
+
+/* --- FIN a Nuevo Maquetado a Terapias y Servicios  ---- */
+
+/*# sourceMappingURL=styles-new.css.map */

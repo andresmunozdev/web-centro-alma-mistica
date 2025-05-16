@@ -3,8 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Centro Alma Mística</title>
-    
+    <link rel="icon" href="./image/favicon.png" type="image/png">
+    <title>Centro Alma Mística – Terapias Holísticas, Cursos y Energía</title>
+    <meta name="description" content="Centro Alma Mística: terapias holísticas, sanación energética, cursos de tarot, numerología, reiki y más. Reconecta con tu esencia.">
+    <meta name="keywords" content="terapias holísticas, reiki, tarot, numerología, radiestesia, arcángeles, cursos espirituales, Centro Alma Mística">
+
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Iconos Bootstrap -->
@@ -20,10 +23,10 @@
 <body>
     <!-- Header -->
     <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-purple">
+        <nav class="navbar navbar-expand-lg alm-navbar navbar-dark bg-purple">
             <div class="container">
                 <a class="navbar-brand" href="index.html">
-                    <img src="./image/Logo-Centro-Alma-Mistica.png" alt="Logo Centro Alma Mistica" class="logo">
+                    <img src="./image/Logo-Centro-Alma-Mistica.png" alt="Centro Alma Mística, símbolo espiritual con serpiente dorada y fondo morado" class="logo">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
                         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -58,86 +61,99 @@
         </nav>
     </header>
 
-    <!-- Contenido Main  -->
-    <main>
-        <!-- Sección Hero  -->
-        <section class="hero-section text-center">
-            <div class="container">
-                <h1 class="animate__animated animate__zoomIn">Centro Alma Mística</h1>
-                <p class="lead animate__animated animate__slideInDown">Un espacio dedicado a la sanación, el equilibrio y el bienestar integral</p>
-            </div>      
-        </section>
+    
+        <!-- Contenido con Nuevo Main  -->
+    <main> 
+        <main class="alm-main-hero-nosotros">
+            
+            <!-- Sección Hero -->
+            <section class="alm-hero">
+                <div class="alm-hero__content">
+                    <h1 class = "animate__animated animate__zoomIn"> Centro Alma Mística</h1>
+                    <p class="alm-hero__subtitle lead animate__animated animate__slideInDown">
+                    Un espacio dedicado a la sanación, el equilibrio y el bienestar integral
+                    </p>
+                </div>
+            </section>
 
-        <!-- Seccion detalle de Nosotros -->
-        <section id="nosotros" class="nosotros-us py-5">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-4">
-                        <img src="./image/bienvenida.png" alt="Imagen terapias" class="img-fluid rounded-circle mb-4">
-                    </div>
-                    <div class="col-md-8">
-                        <h2 class="mb-4">Bienvenidos</h2>
-                        <p>En el Centro Alma Mística, ofrecemos una variedad de terapias holísticas diseñadas para ayudarte a reconectar con tu esencia, sanar tu cuerpo y mente, y alcanzar la paz interior. Creemos en la armonía entre el ser humano y su entorno, y nuestra misión es brindarte herramientas para que encuentres equilibrio en todos los aspectos de tu vida.</p>
-                        <p>A través de nuestros servicios, que incluyen reiki, terapia energética, meditación, yoga, y más, podrás experimentar un camino de transformación personal y espiritual.</p>
-                        <p>En nuestro centro, cada sesión es un encuentro único, guiado por profesionales comprometidos con tu bienestar. Descubre la magia de sanar desde adentro.</p>
+            <!-- Sección Nosotros -->
+            <section id="nosotros" class="alm-nosotros">
+                <div class="alm-nosotros__wrapper">
+                    
+                    <figure class="alm-nosotros__image">
+                    <img src="./image/bienvenida.png" alt="Mujer sonriendo en meditación al aire libre, bienvenida al Centro Alma Mística">
+                    </figure>
+                    <div class="alm-nosotros__texto">
+                    <h2>Bienvenidos</h2>
+                    <p>
+                        En el Centro Alma Mística, ofrecemos una variedad de terapias holísticas diseñadas para ayudarte a reconectar con tu esencia, sanar tu cuerpo y mente, y alcanzar la paz interior. Creemos en la armonía entre el ser humano y su entorno, y nuestra misión es brindarte herramientas para que encuentres equilibrio en todos los aspectos de tu vida.
+                    </p>
+                    <p>
+                        A través de nuestros servicios, que incluyen reiki, terapia energética, meditación, yoga, y más, podrás experimentar un camino de transformación personal y espiritual.
+                    </p>
+                    <p>
+                        En nuestro centro, cada sesión es un encuentro único, guiado por profesionales comprometidos con tu bienestar. Descubre la magia de sanar desde adentro.
+                    </p>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
+            
 
-        <!-- Sección servicios -->
-        <section id="servicios" class="servicios py-5 bg-light">
-            <div class="container">
-                <h2 class="text-center mb-5">Accesos Directos</h2>
-                <div class="row">
-                    <div class="col-md-4 mb-4">
-                        <div class="servicios-card">
-                            <h3>Servicios de Terapias</h3>
-                            <p>Ofrecemos diversas terapias holísticas que incluyen reiki, terapia energética, sanación pránica y más, diseñadas para restaurar el equilibrio y promover la sanación.</p>
-                            <a href="./pages/servicios.html" class="btn btn-primary">Conocer más</a>
-                        </div>
-                    </div>
-                    <div class="col-md-4 mb-4">
-                        <div class="servicios-card">
-                            <h3>Cursos y Talleres</h3>
-                            <p>Aprende técnicas de meditación, desarrollo personal y sanación energética con nuestros expertos a través de cursos y talleres prácticos y transformadores.</p>
-                            <a href="./pages/cursos.html" class="btn btn-primary">Ver más</a>
-                        </div>
-                    </div>
-                    <div class="col-md-4 mb-4">
-                        <div class="servicios-card">
-                            <h3>Testimonios</h3>
-                            <p>Conoce las experiencias de transformación de nuestros clientes que han encontrado sanación, equilibrio y bienestar a través de nuestros servicios.</p>
-                            <a href="./pages/testimonios.html" class="btn btn-primary">Leer testimonios</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
 
-        <!-- Sección Newsletter -->
-        <section class="newsletter py-3">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-lg-8 text-center">
-                        <h2 class="mb-3">Suscríbete a nuestro Newsletter</h2>
-                        <p class="mb-4">Recibe información sobre nuestros próximos talleres, consejos de bienestar y más.</p>
-                        <form>
-                            <div class="row g-2">
-                                <div class="col-sm-8">
-                                    <input type="email" class="form-control" placeholder="Ingresa tu email" required>
-                                </div>
-                                <div class="col-sm-4">
-                                    <button type="submit" class="btn btn-primary">Suscribirse</button>
-                                </div>
-                            </div>
-                            <div class="form-text mt-2">No compartiremos tu correo con nadie más.</div>
-                        </form>
-                    </div>
+
+            <main class="alm-main-servicios-newsletter">
+            
+            <!-- Sección Servicios -->
+            <section id="servicios" class="alm-servicios">
+                <h2>Accesos Directos</h2>
+                <div class="alm-servicios__grid">
+
+                    <article class="alm-card">
+                    <h3>Servicios de Terapias</h3>
+                    <p>
+                        Ofrecemos diversas terapias holísticas que incluyen reiki, terapia energética, sanación pránica y más, diseñadas para restaurar el equilibrio y promover la sanación.
+                    </p>
+                    <a href="./pages/servicios.html" class="btn alm-btn">Conocer más</a>
+                    </article>
+
+                    <article class="alm-card">
+                    <h3>Cursos y Talleres</h3>
+                    <p>
+                        Aprende técnicas de meditación, desarrollo personal y sanación energética con nuestros expertos a través de cursos y talleres prácticos y transformadores.
+                    </p>
+                    <a href="./pages/cursos.html" class="btn alm-btn">Ver más</a>
+                    </article>
+
+                    <article class="alm-card">
+                    <h3>Testimonios</h3>
+                    <p>
+                        Conoce las experiencias de transformación de nuestros clientes que han encontrado sanación, equilibrio y bienestar a través de nuestros servicios.
+                    </p>
+                    <a href="./pages/testimonios.html" class="btn alm-btn">Leer testimonios</a>
+                    </article>
+
                 </div>
-            </div>
-        </section>
+            </section>
+
+            <!-- Sección Newsletter -->
+            <section class="alm-newsletter">
+                <h2>Suscríbete a nuestro Newsletter</h2>
+                <p class="alm-newsletter-sub">
+                    Recibe información sobre nuestros próximos talleres, consejos de bienestar y más.
+                </p>
+                <form class="alm-newsletter__form">
+                    <input type="email" placeholder="Ingresa tu email" required>
+                    <button type="submit" class="btn alm-btn">Suscribirse</button>
+                    <small class="alm-newsletter__note">
+                    No compartiremos tu correo con nadie más.
+                    </small>
+                </form>
+            </section>
     </main>
+
+
+    <!-- Fin Main -->
+
 
     <!-- Footer -->
     <footer class="bg-purple text-white py-2">
